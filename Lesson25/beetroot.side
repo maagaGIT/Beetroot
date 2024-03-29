@@ -1,0 +1,524 @@
+{
+  "id": "5cbf6906-63a3-45cc-966b-f1ebad6ca590",
+  "version": "2.0",
+  "name": "Beetroot",
+  "url": "https://beetrootacademy.com/",
+  "tests": [{
+    "id": "471049dd-7cf0-4c19-8d9f-120f89c9dfd3",
+    "name": "[Beet Seed]Test 1",
+    "commands": [{
+      "id": "c9317656-6608-4c03-a07e-2c1eaedbc9dd",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "[data-w-id=\"78eeacda-2843-a66a-d8dd-e2a671bec38a\"]",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "f7b450ab-d0cf-4fbe-a7cc-cfc90ab52381",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//div[@class='course-col-mob des main']/a[@href='/courses/ui-ux']",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "50f492f3-725e-4fbf-815b-64972d884cc5",
+      "comment": "storing Figma ID",
+      "command": "store",
+      "target": "w-node-_2fffc5e4-ba52-5700-c58e-c113088e3de0-74c6ed9c",
+      "targets": [],
+      "value": "figmaID"
+    }, {
+      "id": "50213c53-80b5-4275-961f-b3062703c1a8",
+      "comment": "storing Ui/UX title",
+      "command": "store",
+      "target": "UI/UX Design courses, web design from scratch online at Beetroot Academy",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "5f2b1a00-0047-414e-a676-a8f68dc6159c",
+      "comment": "Storing description",
+      "command": "store",
+      "target": "In the 9 years of our work, over 12,000 students have trusted the Academy and joined 700+ companies worldwide after completing our courses. But not only numbers speak of our services. We're honored to be accredited by Almega, a European organization acknowledging education providers. We meet the Swedish quality standards for adult education, and here's what we offer:",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "3c89ba2a-da8e-4a8d-876d-c15e0ed7b0b5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43248513-69ad-430f-b5e5-ec23a3591dd1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47a9b2d0-252e-4436-b87c-06f5537af54d",
+      "comment": "Un folding UI Design",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7146a00d-4148-401f-92f9-f5ae63cde349",
+      "comment": "Wait for 5 seconds",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f117eb9c-a0d9-4d8a-9c0b-36196fe7289d",
+      "comment": "folding UI Design",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb2466b-86c1-435d-be1a-51940b978b57",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${newTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecd37479-9e83-47f5-92c4-38cdb22c1e61",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=${figmaID}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "270a40d0-7b80-4312-8710-d6a34e2ede78",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.body-29.hwt",
+      "targets": [],
+      "value": "${description}"
+    }]
+  }, {
+    "id": "703ee147-42e8-494d-91fc-7df3294474bd",
+    "name": "[Beet Seed]Test 2",
+    "commands": [{
+      "id": "093cb780-7baa-406e-aff1-46e7db215a0f",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "a[href='https://beetroot.co/'][class='eco-text link']",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "da42bd21-2a40-495c-8233-c3da978f26c4",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//a[@href='/about-us'and@class=\"menu-item-mb-4\"]",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "b2504409-ddb0-4071-846c-3176479aaf9b",
+      "comment": "storing Teachers Image",
+      "command": "store",
+      "target": "img[src$=\"teachers.svg\"]",
+      "targets": [],
+      "value": "teachersIMG"
+    }, {
+      "id": "8ad9f41a-4e5d-4a36-a1d8-aa8ae05ed755",
+      "comment": "storing beetroot tech title",
+      "command": "store",
+      "target": "Beetroot: Custom Software Development Company",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "fb8191c3-924b-4599-bfdb-2f94cc5e05f7",
+      "comment": "Storing desctiption",
+      "command": "store",
+      "target": "Beetroot builds dedicated teams and software solutions that create an impact – for your business and the world. Employ our global tech expertise and Nordic business values to scale up and innovate.",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "a5cd6c00-9a3b-4601-97b4-6888afd1a1f6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16e5833a-c7d2-4298-8192-a8922be72400",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f43b5bf2-86dd-40c6-8293-460753c33dd3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=${teachersIMG}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11bd3fe2-e08e-42fb-bb1a-f92f5e7d6207",
+      "comment": "visiting Beetroot Tech",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d7ea1b3-6850-4a8f-aa5a-307d6a08325b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${newTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47ad3505-ffa1-4343-aef4-9e9fb55457fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class=\"iac-section__content-text\"]",
+      "targets": [],
+      "value": "${description}"
+    }]
+  }, {
+    "id": "5f94ac15-be0c-4822-b439-1d3a55d768fd",
+    "name": "[Beet Seed]Test 3",
+    "commands": [{
+      "id": "6dc564fb-8540-4669-95b7-9bbbc32a9e11",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "a[href=\"/\"] img[class='logo-header'][src='https://assets-global.website-files.com/617158a4a2f9b7827f1ad102/65a8e4e14be2b6b1e170d354_beetroot.svg']",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "402c714b-0d22-4c8e-93fe-207cad4fb80c",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//div[@class=\"button-div-7\"]/a[@href='/consultation' and @class=\"button-6 w-button\"]",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "f8b4ff81-1d6f-4b99-9689-ef8b2237f2dd",
+      "comment": "storing newsletter subscription",
+      "command": "store",
+      "target": "//div[@id='Subscriptions-Main-Page-Form']",
+      "targets": [],
+      "value": "newsletterDIV"
+    }, {
+      "id": "17c04323-8740-479d-ab74-c04b227ded37",
+      "comment": "storing beetroot home page title",
+      "command": "store",
+      "target": "Beetroot Academy - IT training courses online for beginners. Your tech career starts here",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "87a68819-22a4-414b-b9db-12785f239c5d",
+      "comment": "Storing desctiption",
+      "command": "store",
+      "target": "Talk to our educational advisors who will help you select the right course, prepare for admission, or just advise you on your next career goal.",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "064de1f5-97b8-46df-b0ba-167bd497876a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a0d0689-cc55-4fb0-9b94-4db8f4954614",
+      "comment": "",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cd9271c-9fb1-4053-916c-31dde2a6f75e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${newTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5702726c-bf48-48c5-ae56-a1724a535f8d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=${newsletterDIV}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26bd851c-dd18-4077-a2e9-0b6778f441e1",
+      "comment": "visiting Free consultation",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3153d64-fe57-4a41-ba9d-20e4e479c25e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class=\"body-3 reg\"]",
+      "targets": [],
+      "value": "${description}"
+    }]
+  }, {
+    "id": "6e305616-a715-4a72-bcec-04f8bdf96419",
+    "name": "[Beet Sprout] Test 1",
+    "commands": [{
+      "id": "207db5a0-a00c-46fd-984a-13af12478f05",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "[data-w-id=\"78eeacda-2843-a66a-d8dd-e2a671bec38a\"]",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "9b3f5648-0a10-43fc-90d3-80719d672f4f",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//div[@class='course-col-mob des main']/a[@href='/courses/ui-ux']",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "8dd30895-bbb2-4a6c-a7c4-3f7778cfe510",
+      "comment": "storing Figma ID",
+      "command": "store",
+      "target": "w-node-_2fffc5e4-ba52-5700-c58e-c113088e3de0-74c6ed9c",
+      "targets": [],
+      "value": "figmaID"
+    }, {
+      "id": "122966b0-f979-4062-93e8-ed3414c633cf",
+      "comment": "storing Ui/UX title",
+      "command": "store",
+      "target": "UI/UX Design courses, web design from scratch online at Beetroot Academy",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "6f2e522f-2456-4ae0-bb47-5ded9afc3415",
+      "comment": "Storing description",
+      "command": "store",
+      "target": "In the 9 years of our work, over 12,000 students have trusted the Academy and joined 700+ companies worldwide after completing our courses. But not only numbers speak of our services. We're honored to be accredited by Almega, a European organization acknowledging education providers. We meet the Swedish quality standards for adult education, and here's what we offer:",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "847d8353-4919-4793-a749-cc35b04625ae",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6451c723-41c0-4afb-b377-c39faa3b26bc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b69df75a-5340-4d8e-a7f0-e3043b2539ec",
+      "comment": "Un folding UI Design",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb9febfe-ae15-4971-b300-8831551a3585",
+      "comment": "folding UI Design",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b485934-57c8-4626-89d0-03d5760598e1",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=img[id='w-node-b30a0cb7-bb4b-5c57-8fe9-3741d85a3e52-47c6ec22']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44b8445a-4852-4a05-84fd-de495cb73b6c",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=div[class='course-hero-div-2']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "db96b043-ef9f-4282-8ccf-bcb943b98239",
+    "name": "[Beet Sprout] Test 2",
+    "commands": [{
+      "id": "a3955421-8271-4c6f-81a0-d35d0289ccea",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "a[href='https://beetroot.co/'][class='eco-text link']",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "adae5177-a2e0-4441-bb02-624fb873a5b2",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//a[@href='/about-us'and@class=\"menu-item-mb-4\"]",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "84c7754d-b8f5-424d-b8ba-273779ca3ad5",
+      "comment": "storing Teachers Image",
+      "command": "store",
+      "target": "img[src$=\"teachers.svg\"]",
+      "targets": [],
+      "value": "teachersIMG"
+    }, {
+      "id": "f9570cb3-a539-4a4d-9dbb-793436df5f68",
+      "comment": "storing beetroot tech title",
+      "command": "store",
+      "target": "Beetroot: Custom Software Development Company",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "166ada65-8567-431f-899c-c6f05dace0c5",
+      "comment": "Storing desctiption",
+      "command": "store",
+      "target": "Beetroot builds dedicated teams and software solutions that create an impact – for your business and the world. Employ our global tech expertise and Nordic business values to scale up and innovate.",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "661bf2ba-b2f2-43d0-8348-cd636ec7b8d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "662e70f6-a319-419c-a97a-0636d80e3d38",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7432bb7b-5f96-401d-8ea0-bbfe162970df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=${teachersIMG}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "521d2b3d-446c-4ddf-9b66-d43bcd3379cc",
+      "comment": "visiting Beetroot Tech",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f2df8a5-c9f5-4401-aa0a-0ee1cf25d7b3",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=${teachersIMG}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0991585-7845-4190-9974-1680256e904c",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=img[src='https://beetroot.co/wp-content/uploads/sites/2/2022/08/clutch-top1.svg']",
+      "targets": [],
+      "value": "Top 1"
+    }]
+  }, {
+    "id": "f0dbd487-79ab-4d4b-b9fa-ed543c6673b0",
+    "name": "[Beet sprout] Test 3",
+    "commands": [{
+      "id": "3ecdb356-b76c-4cdf-bad0-b3fb6dd09d2d",
+      "comment": "Storing element CSS Path",
+      "command": "store",
+      "target": "a[href=\"/\"] img[class='logo-header'][src='https://assets-global.website-files.com/617158a4a2f9b7827f1ad102/65a8e4e14be2b6b1e170d354_beetroot.svg']",
+      "targets": [],
+      "value": "varElement1"
+    }, {
+      "id": "40cd6aff-caba-47e4-8992-1485023ffd8b",
+      "comment": "Storing element Xpath",
+      "command": "store",
+      "target": "//div[@class=\"button-div-7\"]/a[@href='/consultation' and @class=\"button-6 w-button\"]",
+      "targets": [],
+      "value": "varElement2"
+    }, {
+      "id": "34b6e4e9-3445-47ea-8090-567f219151d8",
+      "comment": "storing newsletter subscription",
+      "command": "store",
+      "target": "//div[@id='Subscriptions-Main-Page-Form']",
+      "targets": [],
+      "value": "newsletterDIV"
+    }, {
+      "id": "f03eea18-c458-4185-9eca-3fb60e3d0fd6",
+      "comment": "storing beetroot home page title",
+      "command": "store",
+      "target": "Beetroot Academy - IT training courses online for beginners. Your tech career starts here",
+      "targets": [],
+      "value": "newTitle"
+    }, {
+      "id": "ce633493-5052-402c-ac03-af5c70128bb2",
+      "comment": "Storing desctiption",
+      "command": "store",
+      "target": "Talk to our educational advisors who will help you select the right course, prepare for admission, or just advise you on your next career goal.",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "bfd48c09-57ad-42f3-8e01-f1751c78f7d4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4ebe16b-776a-4cb7-a398-a1d49d3c103c",
+      "comment": "",
+      "command": "click",
+      "target": "css=${varElement1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c65962d-3015-4dd0-a50e-c0e83a828797",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${newTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df23f7dc-566e-4428-80d3-62a6cfda38f6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=${newsletterDIV}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbe9b580-d1fe-4b60-bb59-30d81dab9367",
+      "comment": "visiting Free consultation",
+      "command": "click",
+      "target": "xpath=${varElement2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9698aa41-e849-45a6-af34-166221014f7d",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=${newsletterDIV}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d66337d0-15c2-4629-811c-b3cb1db52c82",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=img[src='https://assets-global.website-files.com/617158a4a2f9b7827f1ad102/641c370007948b4f6c7f179e_Desktop%20PC%2C%20client.svg']",
+      "targets": [],
+      "value": "You are a few steps away from a new career in tech!"
+    }]
+  }],
+  "suites": [{
+    "id": "f58a4894-5db0-48cf-97ee-893ac3ed6918",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["471049dd-7cf0-4c19-8d9f-120f89c9dfd3"]
+  }],
+  "urls": ["https://beetrootacademy.com/"],
+  "plugins": []
+}
